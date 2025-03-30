@@ -1,10 +1,13 @@
+/* Estilo básico */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    margin-top: 50px;
 }
 
+/* Header */
 header {
     background-color: #d63384;
     color: white;
@@ -28,15 +31,13 @@ nav ul li a {
     font-weight: bold;
 }
 
-section {
-    padding: 20px;
-    text-align: center;
-}
-
+/* Produtos */
 .produto {
     display: inline-block;
     margin: 20px;
     cursor: pointer;
+    text-align: center;
+    align-items: center;
 }
 
 .produto img {
@@ -45,6 +46,7 @@ section {
     border-radius: 10px;
 }
 
+/* Formulário */
 form {
     max-width: 400px;
     margin: auto;
@@ -70,4 +72,43 @@ button {
 
 button:hover {
     background-color: #a82460;
+}
+
+/* Estilos para o botão de mostrar produtos */
+#mostrar-produtos {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #d63384;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#mostrar-produtos:hover {
+    background-color: #a82460;
+}
+
+#produtos {
+    text-align: center;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+    .produto {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
 }

@@ -12,27 +12,28 @@
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
+
+    <button id="mostrar-produtos">Mostrar Produtos</button>
     
     <section id="sobre">
         <h2>Sobre Nós</h2>
         <p>Descubra o mundo da maquiagem com a Beleza Glam. Dicas, tutoriais e produtos incríveis para realçar sua beleza!</p>
     </section>
     
-    <section id="produtos">
+    <section id="produtos" style="display: none;">
         <h2>Nossos Produtos</h2>
-        <div class="produto" onclick="mostrarDetalhes('Batom Vermelho')">
-            <img src="batom.jpg" alt="Batom Vermelho">
+        <article class="produto" onclick="mostrarDetalhes('Batom Vermelho')">
+            <img src="batom.jpg" alt="Imagem de um batom vermelho da Beleza Glam">
             <p>Batom Vermelho</p>
-        </div>
-        <div class="produto" onclick="mostrarDetalhes('Base Matte')">
-            <img src="base.jpg" alt="Base Matte">
+        </article>
+        <article class="produto" onclick="mostrarDetalhes('Base Matte')">
+            <img src="base.jpg" alt="Imagem de uma base matte da Beleza Glam">
             <p>Base Matte</p>
-        </div>
+        </article>
     </section>
     
     <section id="contato">
@@ -50,7 +51,9 @@
             <button type="submit">Enviar</button>
         </form>
     </section>
-    
+
+    <div id="detalhes-produto" style="display:none;"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
