@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    color: #333;
+    line-height: 1.6;
+    background-color:#fddde6;
+  }
+  
+  header {
+    background-color: #d63384;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffd6e0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    color: #d63384;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+  }
+  
+  input, textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #d63384;
+    outline: none;
+  }
+  
+  .btn {
+    background-color: #d63384;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #b0256e;
+  }
+  
+  footer {
+    background-color: #d63384;
+    text-align: center;
+    padding: 1rem;
+    color: black;
+    margin-top: 2rem;
+  }
+
+  .produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .produto {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .produto:hover {
+    transform: scale(1.05);
+  }
+  
+  .produto img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  #mensagem-sucesso {
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
